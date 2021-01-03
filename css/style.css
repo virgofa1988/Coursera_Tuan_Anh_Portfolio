@@ -1,0 +1,104 @@
+.navbar-brand{
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+.nav-item{
+    font-size: 1.1rem;
+    position: relative;
+    letter-spacing: 4px;
+}
+.nav-link.active::after{
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.nav-link::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.247) ;
+    height: 0.8px;
+}
+
+
+ .nav-item{
+        font-size: 0.9rem;
+        position: relative;
+        letter-spacing: 4px;
+ }
+ .navbar-brand{
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+}
+
+
+@media (min-width:576px){
+    .nav-link::after{
+        height: 0;
+    }
+    .nav-link.active::after{
+        height: 1.5px;
+    }
+    .nav-link{
+        font-size: 1.1rem;
+       
+    }
+}
+@media (min-width:768px){
+    .navbar-dark{
+        display: inline-block;
+        min-height: 100vh;
+    }
+     .navbar-toggler {
+        display: none;
+    }
+   .navbar-nav{
+        display: block;
+           margin: 0 auto;
+}
+    .nav-link{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    #container{
+        display: inline-block;
+    }
+    .float-lg-left {
+        float: left!important;
+    }
+   
+    }
+  
+/* Animation for brand */
+#brand_name {
+    position: relative;
+    animation-name: jay_nguyen;
+    animation-duration: 3s;
+}
+@keyframes jay_nguyen {
+    0%   {right:0%}
+    25%  {right:10%;}
+    50% {right:0%}
+    75% {right:-10%}
+    100% {right:0%}
+}
+
+
+#carousel_container{
+    position: relative;
+}
